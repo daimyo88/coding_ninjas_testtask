@@ -1,0 +1,10 @@
+2019-08-11T14:44:00+00:00 CRITICAL Uncaught Error: Call to undefined function dd_action() in C:\wamp64\www\testdomain\wp-content\themes\twentyseventeen_child\functions.php:70
+Stack trace:
+#0 C:\wamp64\www\testdomain\wp-settings.php(499): include()
+#1 C:\wamp64\www\testdomain\wp-config.php(46): require_once('C:\\wamp64\\www\\t...')
+#2 C:\wamp64\www\testdomain\wp-load.php(37): require_once('C:\\wamp64\\www\\t...')
+#3 C:\wamp64\www\testdomain\wp-blog-header.php(13): require_once('C:\\wamp64\\www\\t...')
+#4 C:\wamp64\www\testdomain\index.php(17): require('C:\\wamp64\\www\\t...')
+#5 {main}
+  thrown in C:\wamp64\www\testdomain\wp-content\themes\twentyseventeen_child\functions.php on line 70
+

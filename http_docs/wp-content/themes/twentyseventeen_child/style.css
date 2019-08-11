@@ -1,0 +1,120 @@
+/*
+Theme Name: Test theme
+Description: The custom theme using the parent theme Twenty Seventeen.
+Author: Denys Dmytruk
+Author URI: https://www.linkedin.com/in/denis-dmitruk-b54845131/
+Template: twentyseventeen
+Version: 1
+*/
+.site-footer .wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.site-footer .site-info {
+  padding-top: 0;
+  float: none;
+  width: 50%;
+}
+
+.site-footer .footer-contact-info {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.footer-contact-info a {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footer-contact-info .modal-button {
+  display: inline-block;
+  padding: 5px 8px;
+  font-weight: bold;
+  color: #fff;
+  background: #000;
+  border: 1px solid #000;
+  transition: 0.4s;
+}
+
+.footer-contact-info .modal-button:hover {
+  color: #000;
+  background: #fff;
+}
+
+.modal-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+}
+
+.modal-wrapper .modal-cont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  transform: translate(-50%, -50%);
+  padding: 25px 20px;
+  max-width: calc(100% - 30px);
+  max-height: calc(100% - 30px);
+  overflow-y: auto;
+}
+
+.modal-cont .close {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    cursor: pointer;
+}
+
+@media(max-width: 600px) {
+  .site-footer .site-info {
+    order: 2;
+    width: 100%;
+  }
+
+  .site-footer .footer-contact-info {
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    width: 100%;
+    order: 1;
+  }
+
+  .modal-wrapper .modal-cont {
+    width: 100%;
+  }
+
+  .footer-contact-info .inner {
+    width: 100%;
+  }
+
+  .footer-contact-info a {
+    margin-bottom: 15px;
+    padding: 5px 8px;
+    font-weight: bold;
+    color: #fff;
+    background: #000;
+    border: 1px solid #000;
+    transition: 0.4s;
+    text-align: center;
+  }
+
+  .footer-contact-info .only-desktop {
+    display: none;
+  }
+
+  .footer-contact-info {
+    padding-top: 15px;
+  }
+
+  .footer-contact-info .modal-button {
+    display: block;
+    text-align: center;
+  }
+}
